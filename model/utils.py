@@ -17,7 +17,6 @@ def load_and_preprocess(csv_path, target_column):
     X = df.drop(columns=[target_column])
     y = df[target_column]
 
-    # ✅ One-hot encode categorical features
     X = pd.get_dummies(X, drop_first=True)
 
     # Save feature schema
@@ -26,7 +25,7 @@ def load_and_preprocess(csv_path, target_column):
     # Train-test split
     X_train, X_test, y_train, y_test = train_test_split(
         X, y,
-        test_size=0.2,
+        test_size=0.15,
         random_state=42,
         stratify=y
     )
@@ -57,7 +56,6 @@ def evaluate_model(model, X_test, y_test):
         "MCC": matthews_corrcoef(y_test, y_pred)
     }
 
-    # ✅ Handle AUC safely
     try:
         if len(np.unique(y_test)) == 2:
             # Binary classification
