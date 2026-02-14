@@ -49,25 +49,15 @@ The following machine learning models were implemented and evaluated:
 
 ---
 
-## 📝 Model Observations
+| **ML Model Name**            | **Observation about Model Performance**                                                                                                                                                                |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Logistic Regression**      | Performed well with high accuracy and AUC, indicating good class separation. However, it is slightly less effective than ensemble models in capturing complex non-linear patterns.                     |
+| **Decision Tree**            | Achieved perfect scores across all metrics. While this indicates excellent performance, it may suggest overfitting, especially on smaller or simpler datasets.                                         |
+| **KNN**                      | Delivered balanced and consistent performance across all metrics. Performance is good but slightly lower than Logistic Regression and ensemble models, likely due to sensitivity to data distribution. |
+| **Naive Bayes**              | Showed moderate performance with comparatively lower accuracy and AUC. This is expected due to its strong feature independence assumption.                                                             |
+| **Random Forest (Ensemble)** | Achieved perfect performance, demonstrating strong generalization and robustness by combining multiple decision trees and reducing overfitting.                                                        |
+| **XGBoost (Ensemble)**       | Also achieved perfect scores. Its boosting mechanism effectively corrects previous errors, making it one of the best-performing models in this project.                                                |
 
-- **Logistic Regression:**  
-  Performed well with high accuracy and AUC, indicating good class separation. However, it is slightly less effective than ensemble models in capturing complex non-linear patterns.
-
-- **Decision Tree:**  
-  Achieved perfect scores across all metrics. While this indicates excellent performance, it may suggest overfitting, especially on smaller or simpler datasets.
-
-- **KNN:**  
-  Delivered balanced and consistent performance across all metrics. Performance is good but slightly lower than Logistic Regression and ensemble models, likely due to sensitivity to data distribution.
-
-- **Naive Bayes:**  
-  Showed moderate performance with comparatively lower accuracy and AUC. This is expected due to its strong feature independence assumption.
-
-- **Random Forest (Ensemble):**  
-  Achieved perfect performance, demonstrating strong generalization and robustness by combining multiple decision trees and reducing overfitting.
-
-- **XGBoost (Ensemble):**  
-  Also achieved perfect scores. Its boosting mechanism effectively corrects previous errors, making it one of the best-performing models in this project.
 
 ---
 
