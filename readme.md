@@ -88,7 +88,7 @@ hard-coded local file paths.
 ---
 
 ## 8. Repository Structure
-ml_assignment_2/
+mlassignment2/
 │
 ├── app.py
 ├── requirements.txt
